@@ -1,0 +1,309 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+.body-wrapper {
+	margin: 30px;
+}
+
+.search-list-options {
+  list-style: none;
+  margin: 0;
+  padding: 40px;
+}
+
+.nonactive {
+  color: grey;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 4px 8px;
+}
+
+.active {
+  background-color: #bbd5ed;
+  color: #4080ff;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+  width: 160px;
+}
+
+.search-list-options li:hover {
+  color: #4080ff;
+  cursor: pointer;
+}
+
+.results-body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+h1 {
+	margin-top: 65px;
+	margin-bottom: 5px;
+	color: grey;
+	font-size: 25px;
+	font-weight: 300;
+	border-bottom: 1px solid lightgrey;
+  padding-bottom: 5px;
+}
+
+h2 {
+	margin-top: 25px;
+	margin-bottom: 5px;
+	color: grey;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.main-header {
+	background-color: rgb(185,185,185);
+	height: 45px;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid rgb(155,155,155);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.apple-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(210,210,210);
+	height: 45px;
+	width: 33%;
+	border-left: 1px solid rgb(165,165,165);
+	border-right: 1px solid rgb(165,165,165);
+}
+
+.fa-apple {
+	font-size: 35px;
+	color: rgb(105,105,105);
+}
+
+.searchbar-wrapper {
+	position: fixed;
+	background-color: white;
+	top: 11px;
+	right: 11px;
+	width: 188px;
+	height: 24px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	border: 1px solid rgb(155,155,155);
+}
+
+.fa-search {
+	font-size: 12px;
+	margin: 4px;
+	color: grey;
+}
+
+.search-input {
+	font-size: 12px;
+	width: 165px;
+	border: none;
+
+	outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.explicit {
+	background-color: rgb(191,0,15);
+	color: white;
+	height: 10px;
+	width: 10px;
+  display: flex;
+  font-size: 7px;
+  align-items: center;
+  justify-content: center;
+}
+
+.song-name-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.song-name {
+	margin: 0 4px;
+}
+
+.clip-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.album-item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100px;
+}
+
+.album-title {
+	color: black;
+	font-size: 13px;
+  width: 90px;
+}
+
+.album-artist {
+	color: grey;
+	font-size: 11px;
+  margin: 3px 0;
+  width: 100px;
+}
+
+.album-price {
+	color: black;
+	font-size: 11px;
+}
+
+.album-item-wrapper {
+	display: inline-block;
+	margin: 0 8px;
+}
+
+.album-name-rating {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+  margin: 3px 0;
+}
+
+tr {
+	color: grey;
+	font-weight: 400;
+	font-size: 12px;
+  padding: 0;
+  height: 35px;
+}
+
+.header-row {
+  height: 22px;
+}
+
+td {
+  height: 35px;
+  padding: 0 12px 0 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+}
+
+.broad-results {
+  width: 85%;
+}
+
+th {
+  text-align: left;
+  vertical-align: middle;
+  color: grey;
+	font-weight: 300;
+	font-size: 12px;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding: 0 12px 0 0;
+}
+
+.song-number {
+  text-align: right;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding: 8px 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  align-items: flex-end;
+}
+
+.grid .album-item-wrapper {
+  margin: 8px;
+}
+
+.empty-btn {
+  background: transparent;
+  border: none;
+  height: 18px;
+}
+
+.song-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  width: 4%;
+}
+
+.song-name-col {
+  width: 29%;
+}
+
+.song-expl-col {
+  width: 5%;
+}
+
+.song-artist-col {
+  width: 24%;
+}
+
+.song-album-col {
+  width: 24%;
+}
+
+.song-time-col {
+  width: 6%;
+}
+
+.song-price-col {
+  width: 8%;
+}
+
+.fa-play-circle {
+  display: none;
+}
+
+.fa-pause-circle {
+  color: #4080ff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.song-row-container:hover .fa-play-circle {
+  display: block;
+  color: #4080ff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.song-row-container:hover .song-num-hidden {
+  display: none;
+}
