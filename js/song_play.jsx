@@ -29,6 +29,7 @@ class SongPlay extends React.Component {
   }
 
   handlePlay() {
+		console.log("play");
   	this.state.audio.play();
     document.addEventListener('click', this.handleClickOutside, false);
   }
@@ -41,6 +42,7 @@ class SongPlay extends React.Component {
   }
 
   handleClick() {
+		console.log("click");
   	if (this.state.playing) {
     	this.setState(
       	{ playing: false, paused: false },
@@ -55,6 +57,7 @@ class SongPlay extends React.Component {
   }
 
   render() {
+		debugger
     const iconText = this.state.playing ? "pause" : "play";
     let num;
     if (!this.state.playing && !this.state.paused) {

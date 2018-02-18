@@ -1,4 +1,5 @@
 import React from 'react';
+import Explicit from './explicit';
 
 const ScrollItem = ({ item, type }) => {
 	let title; let price; let name;

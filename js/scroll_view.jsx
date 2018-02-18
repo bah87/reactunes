@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollItem from './scroll_item';
 
 const ScrollView = ({ items, title, styleClass }) => {
   const type = title === "musicVideos" ? "Music Videos" :

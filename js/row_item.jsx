@@ -1,6 +1,7 @@
 import React from 'react';
 import convertTime from './convert_time';
 import Explicit from './explicit';
+import SongPlay from './song_play';
 
 const RowItem = ({ item, idx }) => {
 	const previewAndName = (
